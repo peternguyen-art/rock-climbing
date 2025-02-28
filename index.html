@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Rock Climbing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: rgb(162,171,206);
+            background: linear-gradient(180deg, rgba(162,171,206,1) 0%, rgba(255,255,255,1) 100%);
+            background-repeat: no-repeat;
+        }
+
+        header{
+            display: grid;
+            grid-template: 100px / 10% 1fr;
+            height: 100px;
+            padding-top: 30px;
+            padding-left: 3em;
+            background-color: #e0e0e0;
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header img{
+            width: 5rem;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+        }
+
+        header h1{
+            justify-items: center;
+            padding-right: 4rem;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            height: auto;
+            background-color: #d0d0d0;
+        }
+        .content div {
+            flex: 1;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .content div span {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .content div:nth-child(1) {
+            background-image: url(types.png);
+        }
+        .content div:nth-child(2) {
+            background-image: url(equipments.png);
+        }
+        .content div:nth-child(3) {
+            background-image: url(fall.png);
+        }
+        .content div:nth-child(4) {
+            background-image: url(goat.png);
+        }
+        .content div:nth-child(5) {
+            background-image: url(newsletter.png);
+        }
+        .content a {
+            color: white;
+            text-decoration: none;
+        }
+        .content a:hover {
+            color: lightpink;
+        }
+        footer {
+            font-family: Arial, Helvetica, sans-serif;
+            border: solid black;
+            padding: 0.5px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 64em){
+            header{
+        display: block;
+        padding: 16px;
+        font-size: 18px;
+        }
+    
+        header img{
+        display: none;
+        }
+
+        header h1{
+        text-align: center;
+        padding-right: 0;
+        }
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            header{
+        display: block;
+        padding: 14px;
+        font-size: 16px;
+        }
+    
+        header img{
+        display: none;
+        }
+
+        header h1{
+        text-align: center;
+        padding-right: 0;
+        }
+            
+            .content {
+                flex-direction: column;
+            }
+            .content div {
+                height: 500px;
+                padding: 150px;
+            }
+            .content div::before{
+                transform: rotate(90deg);
+                transform-origin: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo, climbing person">
+       <h1>Introduction to Rock Climbing</h1>
+    </header>
+
+    <section class="content">
+        <div><span><a href="types.html">Types of Rock Climbing</a></span></div>
+        <div><span><a href="equip.html">Equipment and their Terminologies</a></span></div>
+        <div><span><a href="fall.html">How to Safely Climb...and Fall</a></span></div>
+        <div><span><a href="goats.html">Stories of the G.O.A.T.s</a></span></div>
+        <div><span><a href="newsletter.html">Newsletter</a></span></div>
+    </section>
+
+    <footer>
+        <i>
+            <small>
+                Copyright &copy; 2024 University of Cincinnati, IT2040<br>
+                <a href="mailto:nguye5he@mail.uc.edu">nguye5he@mail.uc.edu</a>
+            </small>
+        </i>
+    </footer>
+</body>
+</html>

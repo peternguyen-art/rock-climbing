@@ -1,0 +1,298 @@
+header{
+    display: grid;
+    grid-template: 100px / 10% 1fr;
+    border: solid black;
+    color: black;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 3em;
+}
+
+header img{
+    width: 5rem;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+header h1{
+    justify-self: center;
+    padding-right: 4rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: rgb(162,171,206);
+    background: linear-gradient(180deg, rgba(162,171,206,1) 0%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+}
+
+
+#equip-gallery{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    align-items: stretch;
+    border: 1px solid #ccc;
+}
+
+.container{
+    display: flex;
+}
+
+#equip-gallery img{
+    width: 10rem;
+    height: 10rem;
+}
+
+#equip-gallery div{
+    list-style: none;
+    padding: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+#equip-gallery figcaption{
+    text-align: center;
+    background-color: #ac5f6b6d ;
+}
+
+#equip-gallery div p{
+    padding-left: 1.5rem;
+    text-align: center;
+}
+
+nav{
+    width: 20%;
+    min-width: fit-content;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: larger;
+    background-color: #4069ff33;
+}
+
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+nav a:hover{
+    color: #ac5f6b;
+}
+
+nav a:after{
+    color: palevioletred;
+}
+
+.YouTube-vid {
+    display: flex;
+    justify-content: center;
+}
+    
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+}
+
+table{
+    width: 100%;
+    border-color: #ac5f6b;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 3s ease-out;
+}
+
+table a:hover{
+    color: #ac5f6b;
+}
+
+
+td,th{
+    border: 1px solid #ac5f6b;
+    padding: 0.5em;
+    text-align: center;
+}
+
+tr:nth-of-type(odd){
+    background-color: #ECF9EC;
+}
+
+main{
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main a{
+    text-decoration: none;
+    color: #ac5f6b;
+}
+
+.samp1, .samp2{
+    display: flex;
+}
+
+.samp1 img, .samp2 img { 
+    width: 20rem;
+    height:  15rem;
+    display: block;
+    margin: 10px;
+}
+
+figure{
+    width: fit-content;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.samp2{
+    flex-direction: row-reverse;
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]{
+    margin-left: 135px;
+}
+
+
+@media only screen and (max-width: 64em){
+    header{
+        display: block;
+        padding: 1rem;
+    }
+    
+    header img{
+        display: none;
+    }
+
+    header h1{
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .container{
+        display: block;
+        width: auto;
+    }
+
+    main{
+        margin-left: 0;
+        width: fit-content;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        float: none;
+        width: auto;
+        align-items: center;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .samp1, .samp2{
+        display: block;
+        align-items: center;
+    }
+
+    .samp1 img, .samp2 img{
+        height: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    
+    footer{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 37.5em){
+    header{
+        display: block;
+        padding: 1rem;
+    }
+    
+    header img{
+        display: none;
+    }
+
+    header h1{
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    main{
+        font-size: 90%;
+    }
+
+    nav{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav div{
+        padding: .25rem;
+        box-shadow: 0px 2px 2px #ac5f6b;
+    }
+
+    .samp1, .samp2{
+        display: block;
+    }
+
+    .samp1 img, .samp2 img{
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #equip-gallery{
+        display: block;
+    }
+
+    #equip-gallery img{
+        height: 100%;
+        width: 100%;
+    }
+
+    #equip-gallery div p{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    input[type="submit"]{
+        margin: auto;
+    }
+
+
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid black;
+    padding: 0.5px;
+    text-align: center;
+}
