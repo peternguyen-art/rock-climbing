@@ -6,4 +6,4 @@ Check out the website! Grab your climbing shoes and climb on!
 
 ## Tools used
 HTML and CSS
-##Hosted on UC Homepages
+## Hosted on UC Homepages
